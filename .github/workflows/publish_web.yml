@@ -33,7 +33,7 @@ jobs:
       - name: Prepare dependencies
         run: flutter pub get
       - name: Analyse the repo
-        run: flutter analyze lib example/lib
+        run: flutter analyze lib
       - name: Run tests
         run: flutter test
       - name: Generate docs
@@ -43,7 +43,7 @@ jobs:
 
   publish_web:
     needs: analyze
-    name: Test iOS
+    name: publish web
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3

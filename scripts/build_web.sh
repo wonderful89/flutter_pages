@@ -23,5 +23,5 @@ copyResourcesToWeb(){
   mkdir $appWebDir2
   cp -r build/web/*  $appWebDir2
 }
-copyResourcesToWeb
+#copyResourcesToWeb
 
